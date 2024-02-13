@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #FCE09B;
+    --dark-blue: #186F65;
+    --light-blue: #B5CB99;
+    --red: #B2533E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    font-family: "Georama", sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 3rem 0 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#game-board {
+    display: grid;
+    border: 1px solid;
+    aspect-ratio: 1;
+    width: 300px;
+    margin: 1rem auto 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 3px 3px 10px;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.cell {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    aspect-ratio: 1;
+    max-width: 100px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+button {
+    font-size: 1.3rem;
+    width: fit-content;
+    margin: 0.5rem auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: white;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.custom-names {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+#custom-header {
+    padding: 1rem 0.5rem;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.custom-content {
+    display: inherit;
+    flex-direction: column;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1rem;
+    transition: 0.5s all;
+}
+
+label {
+    font-family: "Protest Riot", sans-serif;
+    background-color: white;
+}
+
+.hidden {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+.input-container {
+    margin: 1rem auto 0;
+    font-size: 2rem;
+    background-color: white;
+    width: 90%;
+}
+
+input {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#set-custom {
+    margin-bottom: 0.5rem;
+    padding: 5px 20px;
+}
+
+.signature {
+    position: absolute;
+    bottom: 10px;
+    font-style: italic;
+}
