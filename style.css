@@ -134,6 +134,7 @@ input {
 
 .signature {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
+    left: 2px;
     font-style: italic;
 }
